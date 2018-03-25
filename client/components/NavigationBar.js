@@ -10,7 +10,7 @@ class NavigationBar extends React.Component {
   }
 
   render() {
-    const { isAuthenticate } = this.props.auth;
+    const { isAuthenticated } = this.props.auth;
 
     const userLinks = (
       <ul className="nav navbar-nav navbar-right">
@@ -33,7 +33,7 @@ class NavigationBar extends React.Component {
           </div>
 
           <div className="collapse navbar-collapse">
-            { isAuthenticate ? userLinks : guestLinks }
+            { isAuthenticated ? userLinks : guestLinks }
           </div>
         </div>
       </nav>
